@@ -1,8 +1,14 @@
-# 🤖 AI Task Manager - Cloudflare Internship Project
+# AI Task Manager - Cloudflare Internship Project
+
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20App-orange)](https://ai-task-manager.rohankr2778.workers.dev)
+[![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020)](https://workers.cloudflare.com/)
+
+**Live Demo**: [https://ai-task-manager.rohankr2778.workers.dev](https://ai-task-manager.rohankr2778.workers.dev)
 
 An intelligent task management system powered by **Cloudflare Workers AI** and **Llama 3.3**, demonstrating real-time AI-powered task coordination with persistent state management.
 
-## 🎯 Project Overview
+## Project Overview
 
 This application showcases all required components for the Cloudflare Summer Internship challenge:
 - ✅ **LLM Integration**: Llama 3.3 via Workers AI
@@ -10,7 +16,7 @@ This application showcases all required components for the Cloudflare Summer Int
 - ✅ **User Input**: Real-time WebSocket chat interface
 - ✅ **Memory/State**: Persistent SQLite storage with conversation history
 
-## 🌟 Features
+## Features
 
 - **Natural Language Task Management**: Create, update, and complete tasks through conversational AI
 - **Real-time Synchronization**: WebSocket connections for instant updates
@@ -18,7 +24,7 @@ This application showcases all required components for the Cloudflare Summer Int
 - **Persistent Storage**: SQLite database maintains tasks and conversation history
 - **Intelligent Parsing**: AI automatically extracts task details (title, priority, due date) from natural language
 
-## 🏗️ Architecture
+##  Architecture
 ```
 ┌─────────────┐
 │   User      │
@@ -46,7 +52,7 @@ This application showcases all required components for the Cloudflare Summer Int
 └─────────────────────────────────┘
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 18+
@@ -75,7 +81,7 @@ npx wrangler dev
 ```
 Open `http://localhost:8787` in your browser
 
-## 💬 Example Interactions
+## Example Interactions
 
 Try these commands:
 - "Add a task to prepare for my Cloudflare interview"
@@ -84,7 +90,7 @@ Try these commands:
 - "Create a high priority task to review Durable Objects documentation due tomorrow"
 - "Break down my project into smaller steps"
 
-## 📁 Project Structure
+## Project Structure
 ```
 cloudflare-ai-task-manager/
 ├── src/
@@ -99,7 +105,7 @@ cloudflare-ai-task-manager/
 └── README.md
 ```
 
-## 🔧 Technical Highlights
+## Technical Highlights
 
 ### 1. **Durable Objects for State**
 Each user session gets its own Durable Object instance with:
@@ -145,7 +151,7 @@ AI extracts structured data from natural language:
 - **TypeScript**: Type-safe development
 - **Tailwind CSS**: Modern, responsive UI
 
-## 📊 API Endpoints
+## API Endpoints
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
@@ -155,32 +161,5 @@ AI extracts structured data from natural language:
 | `/api/tasks/:id` | PUT | Update task |
 | `/api/tasks/:id` | DELETE | Delete task |
 
-## 🎓 What I Learned
 
-Building this project taught me:
-- How to architect stateful applications on edge infrastructure
-- Real-time communication patterns with WebSockets and Durable Objects
-- Integrating LLMs for natural language understanding
-- Building production-ready serverless applications
-- Managing persistent state at the edge
-
-## 🚧 Future Enhancements
-
-- [ ] Voice input using Cloudflare's voice models
-- [ ] Multi-user collaboration with shared task lists
-- [ ] Task analytics and productivity insights
-- [ ] Integration with calendar APIs
-- [ ] Mobile-responsive PWA
-- [ ] Task templates and recurring tasks
-
-## 📝 License
-
-MIT License - feel free to use this project as reference!
-
-## 🙏 Acknowledgments
-
-Built for the Cloudflare Summer 2025 Internship Application. Special thanks to the Cloudflare developer relations team for excellent documentation.
-
----
-
-**Made with ☁️ by [Your Name]**
+**Made by Rohan Kapoor**
